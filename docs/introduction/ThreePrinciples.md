@@ -50,7 +50,7 @@ store.dispatch({
 
 **为了描述 action 如何改变 state tree ，你需要编写 [reducers](../Glossary.md#reducer)。**
 
-Reducer 只是一些纯函数，它接收先前的 state 和 action，并返回新的 state。刚开始你可以只有一个 reducer，随着应用变大，你可以把它拆成多个小的 reducers，分别独立地操作 state tree 的不同部分，因为 reducer 只是函数，你可以控制它们被调用的顺序，传入附加数据，甚至编写可复用的 reducer 来处理一些通用任务，如分页器。
+Reducer 只是一些纯函数，它接收先前的 state 和 action，并返回新的 state。切记，一个reducer函数返回来的是一个新的state，而不是之前变化的state。刚开始你可以只有一个 reducer，随着应用变大，你可以把它拆成多个小的 reducers，分别独立地操作 state tree 的不同部分，因为 reducer 只是函数，你可以控制它们被调用的顺序，传入附加数据，甚至编写可复用的 reducer 来处理一些通用任务，如分页器。
 
 ```js
 
